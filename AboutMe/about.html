@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonam Choki | Project Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Professional Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="showSection('home')">SONAM<span>CHOKI</span></div>
+            <ul class="nav-menu">
+                <li><a href="javascript:void(0)" onclick="showSection('home')">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">About Me <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="javascript:void(0)" onclick="showSection('profile')">My Profile</a></li>
+                        <li><a href="javascript:void(0)" onclick="showSection('education')">Education</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('projects')">Project Gallery</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('contact')" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Wrapper -->
+    <div id="main-wrapper">
+
+        <!-- WELCOME PAGE -->
+        <section id="home" class="page active">
+            <div class="hero-content">
+                <span class="badge">Welcome to my Digital Space</span>
+                <h1>Architecting Secure <br> <span class="gradient-text">Network Systems</span></h1>
+                <p>Computer Systems & Networks Specialist. Specialized in Laravel development, Docker environments, and Network Security.</p>
+                <div class="hero-actions">
+                    <button class="main-btn" onclick="showSection('profile')">Start Exploring</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFILE SECTION -->
+        <section id="profile" class="page">
+            <div class="container">
+                <div class="glass-card">
+                    <button class="back-btn" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Go Back</button>
+                    <h2 class="section-header">Professional Profile</h2>
+                    
+                    <div class="profile-layout">
+                        <div class="profile-image-container">
+                            <img src="image/WhatsApp Image 2026-04-14 at 9.33.39 PM.jpeg" alt="Sonam Choki" class="profile-main-img">
+                        </div>
+                        <div class="profile-details">
+                            <p class="bio-text">I am a dedicated Diploma student at Jigme Namgyel Engineering College with a passion for solving complex technical challenges. I bridge the gap between software development (Laravel) and robust infrastructure (Networking & Linux).</p>
+                            <div class="profile-stats">
+                                <div class="stat"><span>2+</span><p>Years Exp</p></div>
+                                <div class="stat"><span>10+</span><p>Projects</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="page">
+            <div class="container">
+                <div class="glass-card education-bg">
+                    <button class="back-btn" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Go Back</button>
+                    <h2 class="section-header">Education & Journey</h2>
+                    <div class="edu-item">
+                        <h3>Jigme Namgyel Engineering College</h3>
+                        <p class="tag">2023 - 2025</p>
+                        <p>Diploma in Computer System and Network</p>
+                    </div>
+                    <div class="edu-item">
+                        <h3>Losel Gyatsho Academy</h3>
+                        <p class="tag">2021 - 2022</p>
+                        <p>Class 12 Commerce</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="page">
+            <div class="container">
+                <div class="glass-card">
+                    <button class="back-btn" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Go Back</button>
+                    <h2 class="section-header">Technical Expertise</h2>
+                    <div class="skills-grid">
+                        <div class="skill-box">
+                            <div class="skill-info"><span>Networking (CCNA)</span><span>90%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-info"><span>Laravel / PHP</span><span>85%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-info"><span>Linux & Docker</span><span>80%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-info"><span>Cybersecurity</span><span>75%</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT GALLERY SECTION -->
+        <section id="projects" class="page">
+            <div class="container">
+                <div class="glass-card">
+                    <button class="back-btn" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Go Back</button>
+                    <h2 class="section-header">Project Gallery</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <i class="fas fa-database"></i>
+                            <h3>IT Asset Management</h3>
+                            <p>Web-based Laravel application with Role-Based Access Control and hardware inventory digitizing.</p>
+                        </div>
+                        <div class="project-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Cyber Range Lab</h3>
+                            <p>Dockerized OT/ICS environment for threat detection and SIEM monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="page">
+            <div class="container">
+                <div class="glass-card">
+                    <button class="back-btn" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Go Back</button>
+                    <h2 class="section-header">Let's Connect</h2>
+                    
+                    <div class="contact-details">
+                        <p class="email-display">sonnamchoki9@gmail.com</p>
+                        <div class="c-item"><i class="fas fa-phone"></i> +975 17255337</div>
+                        <div class="c-item"><i class="fas fa-map-marker-alt"></i> Sarpang, Bhutan</div>
+                        
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sonnamchoki" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/sonnamchoki" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://sonamchoki9.wordpress.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            window.scrollTo(0,0);
+        }
+    </script>
+</body>
+</html>
