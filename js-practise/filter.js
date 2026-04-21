@@ -33,19 +33,31 @@
 
 // Exercise 4
 
-const trainees = [
-  { name: "Karma", vertical: "Dev" },
-  { name: "Sonam", vertical: "QA" },
-  { name: "Tshering", vertical: "Dev" },
-  { name: "Pema", vertical: "BA" }
+// const trainees = [
+//   { name: "Karma", vertical: "Dev" },
+//   { name: "Sonam", vertical: "QA" },
+//   { name: "Tshering", vertical: "Dev" },
+//   { name: "Pema", vertical: "BA" }
+// ];
+
+// const result = trainees
+//   .filter(t => t.vertical === "Dev")
+//   .map(t => t.name)
+//   .sort();
+
+// console.log(result);
+
+// exercise 5
+const cart = [
+  { name: "Tea", price: 50, quantity: 2 },
+  { name: "Rice", price: 200, quantity: 1 },
+  { name: "Oil", price: 150, quantity: 3 }
 ];
 
-const result = trainees
-  .filter(t => t.vertical === "Dev")
-  .map(t => t.name)
-  .sort();
+const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+console.log(total);
 
-console.log(result);
+// Expected: 50*2 + 200*1 + 150*3 = 750
 
 // //Exercise 6
 // const response = {
@@ -58,4 +70,6 @@ console.log(result);
 // console.log(email)
 
 // // Expected: "no email" (no crash)
+ 
+// create a function to filter dev trainees
 

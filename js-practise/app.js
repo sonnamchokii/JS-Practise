@@ -34,6 +34,7 @@ for (let i = 1; i <= 20; i++) {
   }
 }
 
+
 function getGrade(score) {
   if (score >= 90) {
     return "Excellent";
@@ -54,7 +55,7 @@ while (currentNumber <= 1000) {
   console.log(currentNumber);
   currentNumber = currentNumber * 2;
 }
-// print
+
    
 
 
