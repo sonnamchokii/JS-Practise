@@ -56,6 +56,4 @@ while (currentNumber <= 1000) {
   currentNumber = currentNumber * 2;
 }
 
-   
-
-
+  
